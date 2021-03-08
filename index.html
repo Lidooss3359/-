@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8" />
+<title>Лида</title>
+<style>
+#shapka {
+  max-width: 1000px;
+  max-height: 275px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grey_block {
+  width: 1000px;
+  height: 275px;
+  display: block;
+  background-color: black;
+  display: flex;
+  transition: 1.5s;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  opacity: 0;
+}
+
+#shapka img {
+  width: 1000px;
+  height: 275px;
+  display: block;
+  transform: scale(1);
+  transition: 1.5s;
+  position: relative;
+  z-index: 1;
+}
+
+#grey_block:hover +#logo {
+  transform: scale(1.15);
+  transition: 1.5s;
+}
+
+#grey_block:hover {
+  opacity: 0.85;
+  transition: 1.5s;
+}
+
+#name {
+  margin: 0;
+  margin-top: 10px;
+  text-shadow: 0 2px 3px #000;
+}
+
+#wrapper{
+  width: 1000px;
+  outline: 1px solid #787274;
+  padding: 10px;
+  margin: 0 auto;
+  box-shadow: 0 0 30px #888;
+}
+
+#header{
+  position:relative;
+  width: 1000px;
+  background-image: url(bg.png);
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+#header img {
+  width: 70px;
+}
+
+#sidebar{
+  background-image: url(bg.png);
+  background-size: contain;
+  margin-bottom: 10px;
+  width: 180px;
+  padding: 10px;
+  float: right;
+  height: 152px;
+  margin-left: 10px;
+}
+
+#sidebar p{
+  text-align: center;
+}
+
+#sidebar a {
+  text-decoration: none;
+  color: #ffee00;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  border-radius: 15px;
+  text-transform: uppercase;
+}
+
+#sidebar a:hover {
+  color: #000;
+  border: 1px solid #ffee00;
+  color: #fff;
+  transition: 1s;
+}
+
+#content{
+  background-image: url(bg.png);
+  background-size: contain;
+  width: 760px;
+	height: 142px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#content p{
+  letter-spacing: 3px;
+  color: #fff;
+}
+
+#footer{
+  height:1000px;
+  background-color: #66CDAA;
+  margin-bottom: 10px;
+}
+
+.clear{
+  clear: both;
+}
+
+h1{
+  color: #ffee00;
+  font: 40px Georgia;
+  text-align: center;
+}
+
+.descript{
+  width: 400px;
+  color: #ffee00;
+  font-style: italic;
+  font-size: 22px;
+  text-align: center;
+}
+
+.links {
+  background-color: #222;
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  padding: 20px 218.1px;
+  box-sizing: border-box;
+  transition: 1s;
+  width: 500px;
+  overflow: hidden;
+}
+
+.links a:hover {
+  background-color: #ffee00;
+  color: #000;
+  transition: 1s;
+}
+
+.img {
+  box-shadow: 0 0 5px #000;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="shapka">
+      <div id="grey_block"><h1>TSPU</h1></div>
+        <img src="logo.jpg" id="logo">  
+    </div>
+    <div id="header">
+      <h1 id="name">Уварова 483</h1>
+        <p class="descript">Задания по Web-программированию</p>
+    </div>
+    <div id="sidebar">
+    <p><a href="Авторизация.html">Авторизация</a></p>
+	  <p><a href="Содержание.html">Содержание</a></p>
+	  <p><a href="Видеоматериалы.html">Видеоматериалы</a></p>
+	   <p><a href="Аудиоматериалы.html">Аудиоматериалы</a></p>
+    </div>
+    <div id="content">
+      <p>Cras volutpat pharetra dui vitae lobortis. Aliquam eu dapibus ante. Sed neque lacus, 
+        pretium ac malesuada sed, venenatis nec purus. Phasellus ultricies consectetur imperdiet. 
+        Duis eu ultrices lorem. Nam porta a arcu vel hendrerit. Ut quis justo id dui venenatis consequat. 
+        Nam at euismod magna. Aenean a turpis ex. Quisque malesuada mauris et massa dictum porttitor. 
+        Aenean ut diam orci.
+      </p>
+    </div>
+    <div class="links">
+      <a href="#g2">Глава 1</a>
+		  <a href="#g3">Глава 2</a>
+    </div>
+	<tr>
+			<td> <h2><a id='g2'>Глава 1</a></h2>
+			<p> <img src="https://i.picsum.photos/id/156/200/300.jpg?hmac=_jUswTiDxrGuGLgKw8LAVJu8snR4TPMwLrDqrcqpMu0" width="200" height="300" alt="Каритинка" align="left" vspace="5" hspace="5" class="img">
+			</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque fringilla nisl maximus justo placerat, mollis vulputate sapien fermentum. Fusce scelerisque purus quis felis luctus, vel fringilla tellus ultricies. Suspendisse malesuada dignissim blandit. Suspendisse eget turpis non risus tincidunt ullamcorper. Donec maximus felis augue, vitae dictum quam rutrum quis. Pellentesque consequat vestibulum placerat. Quisque vitae auctor elit, vel tristique velit. Sed sed neque faucibus, pretium libero in, gravida leo. Mauris semper consectetur augue eget dignissim. Aliquam vel mi id nisi placerat blandit. Pellentesque convallis tellus eget enim auctor mollis. In vel dolor at massa sagittis tincidunt a et ipsum. Donec imperdiet suscipit massa, ac euismod urna mattis eget. Suspendisse sed egestas orci. Pellentesque mauris lacus, lobortis eget enim a, accumsan porttitor augue. Nullam eu est ac lectus tincidunt posuere venenatis eget augue.</p>
+				<p>Nulla sollicitudin risus sed vestibulum eleifend. In ut ligula elit. Sed id rutrum nunc. Sed vel magna et quam malesuada maximus at eget augue. Vivamus mollis, neque id dictum porttitor, erat neque volutpat velit, eget malesuada risus dui at lorem. Morbi imperdiet vitae nulla sit amet volutpat. Nunc mollis ipsum non augue condimentum sagittis. Praesent et venenatis nulla. Integer tempus, metus ut viverra aliquam, arcu odio vestibulum augue, et mattis dolor justo et leo.</p>
+				<p>Nam sit amet justo rhoncus, tristique purus ut, fermentum augue. Aliquam auctor, nibh nec commodo sollicitudin, tellus massa luctus purus, ac facilisis nisl turpis ut lacus. Sed imperdiet sodales sapien commodo rutrum. Vivamus ac orci ultrices, hendrerit massa et, posuere eros. Donec nec ligula vel dolor malesuada feugiat. Donec tincidunt sem velit, a blandit ligula ullamcorper sed. Quisque euismod mauris eget tempus porttitor. Integer scelerisque tortor a orci efficitur, quis vulputate leo iaculis. Phasellus tellus lacus, dictum eu tortor non, tempor consequat leo. Vestibulum ut velit sollicitudin, interdum mauris tristique, consectetur massa.</p>
+				<p>Praesent in diam molestie, convallis urna non, gravida purus. Vivamus eleifend metus vitae orci accumsan egestas. Ut ligula mauris, pellentesque quis purus at, placerat euismod risus. Integer eu lacus nunc. Maecenas laoreet eget nibh ac porttitor. Donec gravida dolor justo, sed dignissim ipsum porta vel. Etiam tempus, quam lacinia rutrum aliquet, erat leo aliquam felis, in rhoncus nulla risus nec risus. Fusce et lacus sem. Integer scelerisque ante sollicitudin pulvinar bibendum. Praesent egestas, velit venenatis cursus vestibulum, urna sem facilisis elit, vestibulum viverra nibh dolor et nisi. Curabitur dapibus, ipsum id maximus tincidunt, felis ante bibendum eros, dignissim sodales leo nisl et ipsum. Cras elementum sit amet ante in maximus.</p>
+				<p>Morbi molestie dignissim nunc at volutpat. Praesent vel commodo turpis. Duis maximus nibh eu euismod accumsan. Integer tincidunt ut eros non bibendum. Donec ac gravida velit. Nulla sem tortor, interdum sit amet fermentum ac, accumsan faucibus velit. Aliquam id aliquam elit. Proin mollis iaculis massa nec tincidunt. Phasellus ac ex dictum, ullamcorper magna quis, facilisis mi. Aenean sit amet velit nisl. Maecenas auctor nibh commodo tempus hendrerit. Curabitur sit amet semper lorem.</p>
+				<p>Nulla nulla turpis, sagittis id sagittis at, accumsan eu leo. Ut tincidunt sagittis maximus. Nunc ullamcorper orci diam, vel varius mi efficitur vel. Phasellus hendrerit sodales mollis. Integer maximus hendrerit nunc id condimentum. Mauris non ipsum et dui viverra consequat. Duis id suscipit est.</p>
+			
+			<p><h2><a id='g3'>Глава 2</a></h2></p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus, enim ut tincidunt auctor, nisi dui dignissim diam, quis fringilla sem arcu nec eros. Quisque ut mi id est dignissim egestas sed at dui. Suspendisse potenti. Duis vulputate diam tincidunt arcu tempus, eu ultrices tellus pretium. Morbi in libero dui. Nulla iaculis odio quis orci vestibulum scelerisque. Praesent ut porttitor erat, sit amet luctus elit. Praesent non augue vulputate, maximus velit sit amet, ullamcorper nunc.</p>
+				<p>Maecenas tincidunt pulvinar massa at vulputate. Nam tempor lorem urna, eget fringilla ante ultricies ut. Mauris nec varius felis. Phasellus euismod vitae mi eu finibus. Nunc in vestibulum dui. Vivamus et ligula massa. Donec sit amet dolor condimentum, ultrices sem non, iaculis lectus. Cras posuere, lacus sit amet fermentum blandit, dolor tortor hendrerit ex, sed gravida turpis dui eu lorem. Nam ultricies ut ante quis vehicula. Suspendisse sed euismod sapien, molestie viverra orci. Cras a volutpat urna. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vel euismod justo. Fusce vitae lacus metus.</p>
+				<p>Donec vel ante sed diam semper vehicula vel a ante. Nunc id neque lectus. Nunc ut augue non quam ultricies venenatis id ac massa. Sed semper libero eget quam pellentesque, ac hendrerit nulla malesuada. Donec vel erat ac mauris hendrerit venenatis. Vivamus a quam eget est maximus hendrerit at sed ligula. Morbi lectus arcu, accumsan egestas elit egestas, egestas euismod lacus. Quisque eget augue imperdiet, congue dui vitae, cursus nulla. Duis magna eros, imperdiet sit amet nulla et, semper pharetra turpis.</p>
+				<p>Donec scelerisque libero maximus convallis sodales. Mauris ornare, nisl quis rhoncus sodales, risus justo elementum magna, eu pellentesque metus ex a tellus. Duis vestibulum magna ut posuere ultricies. Maecenas lobortis tincidunt lacus, in luctus ipsum dignissim id. Nam suscipit magna metus, ac feugiat ligula ornare id. Nam iaculis risus tempus ex molestie aliquet. Vivamus ac pellentesque libero. Vivamus eget dignissim eros. Nullam eleifend rutrum dapibus. In viverra mollis diam ac maximus. Fusce nec diam felis. Proin iaculis odio quis diam pretium porta.</p>
+					<img src="https://i.picsum.photos/id/513/500/500.jpg?hmac=HVIU2bKRevpyij3UAQtAIeWXnanZHmeALvWlZE9RYfY" width="500" height="500" alt="Картинка" align="right" vspace="5" hspace="5" class="img">
+				<p>Vivamus suscipit ex sit amet faucibus aliquam. Sed sed eros volutpat, dignissim nisl vel, semper libero. Phasellus scelerisque tincidunt nulla eget interdum. Vivamus fringilla tincidunt elit, et tincidunt eros scelerisque at. Praesent nec tellus quis dui tincidunt lobortis vitae rhoncus urna. Integer mi odio, pellentesque et bibendum a, laoreet id metus. Sed hendrerit lacus vel leo suscipit, eget elementum sapien eleifend. Aenean lacinia purus nisi, convallis hendrerit nulla sagittis eu. Donec bibendum sem et lacus pulvinar posuere. Etiam a magna et risus convallis eleifend. Integer a nibh eu velit porta scelerisque. Praesent ullamcorper ultricies metus non porta. Fusce vel vestibulum mi. Donec aliquam egestas augue, sit amet molestie nunc pretium in. Sed erat nisi, pretium eget blandit et, pharetra eget odio.</p>
+				<p>Donec ac facilisis ligula. Fusce non venenatis ligula. Sed est nibh, viverra in ipsum eu, vulputate semper dolor. Donec pharetra ex velit, ut suscipit lacus scelerisque a. Phasellus sodales, arcu in ornare mattis, eros ligula pretium purus, eu cursus nibh eros vitae libero. Mauris vehicula vehicula pellentesque. Donec gravida eu ante ut laoreet. Etiam lacinia velit at ex efficitur euismod. Integer ac lacus eu libero sollicitudin interdum eu non mauris. Integer ut aliquet lacus, sit amet maximus erat. Vivamus accumsan scelerisque ante. Integer arcu quam, commodo sit amet orci ut, vehicula placerat ipsum. Vestibulum non ornare mi, quis venenatis sapien. Proin a auctor nibh.</p>
+				<p>Cras viverra aliquet nisi, vel fermentum nisi pellentesque at. Vivamus accumsan elit mattis lectus efficitur faucibus at id lectus. Mauris laoreet placerat nisl, vitae fermentum justo porttitor in. Donec ac elementum tortor. Aenean vulputate elementum arcu, vel malesuada purus accumsan sed. Morbi quis fermentum nibh. Duis imperdiet dapibus erat, ut finibus nisi. Fusce vel ex eros. Morbi convallis nulla nisl, sit amet sagittis mauris accumsan vel. Sed pretium urna sed rhoncus luctus. Nulla at odio dapibus, pellentesque odio eu, maximus libero.</p>
+				<p>Praesent dignissim rhoncus orci sed varius. Ut eu lectus ut ligula tristique convallis in et dui. Praesent sem neque, blandit sit amet urna in, euismod porttitor elit. In hac habitasse platea dictumst. Integer dictum quam quam, et lobortis dui vehicula id. Maecenas et laoreet ipsum. Maecenas in finibus neque. Sed pellentesque, nulla sit amet rutrum sollicitudin, mauris leo vehicula augue, vel laoreet risus leo vel dui. Ut sapien neque, ullamcorper eu lectus blandit, placerat vestibulum nibh. Etiam vel ornare enim, eu vehicula enim. Sed arcu nibh, condimentum a finibus faucibus, lacinia non mi. In maximus libero volutpat dignissim lobortis. Praesent elementum sit amet augue sit amet rhoncus. Donec dignissim velit ac lorem viverra aliquam nec sit amet est. Nulla in tellus et neque consequat vulputate a non nibh. Pellentesque vel imperdiet arcu.</p>
+				<p>Vivamus porta rhoncus lacus at scelerisque. Vivamus commodo vestibulum purus, at congue lacus mollis eu. Morbi at purus lobortis quam scelerisque tristique. Etiam ultricies feugiat ex, in eleifend urna. Fusce eget justo a leo ullamcorper maximus. Aliquam tristique, velit sed malesuada condimentum, risus leo tristique leo, at interdum nunc velit ac lacus. Suspendisse tortor nulla, vestibulum vel vestibulum rhoncus, gravida ut velit. Nullam auctor, nulla eu pulvinar luctus, dolor mi fermentum nulla, quis tincidunt tortor turpis vitae velit. Donec interdum dui a tortor faucibus, sit amet tincidunt augue vehicula. Aenean sed interdum lorem. Etiam sagittis ligula diam, quis congue libero aliquam non. Nulla bibendum tortor non velit sodales, et porttitor odio rutrum. Duis sed consequat magna. Maecenas mollis leo commodo felis consectetur lobortis.</p>
+				<p>Etiam a odio felis. Maecenas eleifend est non justo imperdiet sollicitudin. Mauris in metus ipsum. Etiam scelerisque massa ut venenatis ullamcorper. Aenean velit est, ornare nec ullamcorper eu, imperdiet vitae quam. Mauris at sagittis est. Phasellus auctor elit eu arcu congue imperdiet. Proin pellentesque sit amet velit ut tincidunt.</p>
+				<p>Nunc egestas ex nec eros tempus, ut cursus est dapibus. Cras eget lorem eros. Donec tempus, tellus ut viverra placerat, augue turpis consequat mauris, a porttitor urna nisi rhoncus dolor. Vestibulum porta orci velit, vitae pharetra risus finibus et. Vestibulum porta et sem sed finibus. In sagittis mattis libero, at lacinia sem molestie sed. Praesent libero velit, viverra sit amet fringilla eu, maximus ac odio. Curabitur sollicitudin nisi libero. Nulla facilisi. Pellentesque finibus, est non lacinia venenatis, lacus ligula facilisis metus, vel accumsan orci diam quis lorem. Curabitur porttitor justo eu facilisis blandit. Suspendisse ut interdum erat. Mauris molestie ante nec felis aliquam, fermentum tincidunt dolor sagittis.</p>
+				<p>Pellentesque tempor nisl non diam congue, id pharetra libero aliquam. Integer tincidunt metus a ullamcorper viverra. Quisque sagittis quam ligula, quis finibus nunc faucibus quis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec viverra sed lectus et placerat. Sed ac finibus ligula. Phasellus ac tortor vel lectus efficitur tristique id nec est. Curabitur in turpis sagittis, lacinia mauris vel, condimentum arcu. Donec placerat pretium ultricies. Phasellus malesuada maximus arcu, ac pretium neque euismod eu. Curabitur molestie venenatis tempor. Morbi neque ipsum, placerat et commodo at, gravida et ligula. Integer quis velit imperdiet, congue purus ullamcorper, laoreet mauris. Quisque ultricies augue non urna semper mollis.</p>
+				<p>Praesent convallis enim nec odio hendrerit, a porttitor diam accumsan. Aenean vel metus vel neque tempor rhoncus. Integer non ipsum arcu. Sed commodo tempus ipsum sit amet feugiat. Cras hendrerit erat vel euismod hendrerit. Fusce ac malesuada est. Nunc et felis id felis lobortis egestas non eu nunc. Nullam fringilla nulla ipsum, ac maximus mauris cursus vel. Proin ligula erat, lobortis sit amet purus posuere, dapibus aliquam orci. Aliquam dapibus elit pharetra elit aliquam, sed consequat ante porttitor. Sed lacinia ac lorem id luctus. Vestibulum nec sodales nisi.</p>
+				<p>Quisque ac augue leo. Proin dictum in urna id vestibulum. Etiam faucibus massa mauris, eget condimentum lacus scelerisque ac. Curabitur ornare congue sollicitudin. Suspendisse bibendum libero purus, et accumsan erat cursus convallis. Nam odio orci, ultrices tempor efficitur sed, posuere ut enim. Integer ut ligula at nisl volutpat volutpat. Phasellus commodo efficitur nisi, sit amet rhoncus velit. Donec hendrerit ultrices porta. Nam vulputate augue nec arcu aliquet mattis. Quisque metus sem, tristique nec orci in, efficitur dictum ipsum. Curabitur sed magna eros. Curabitur gravida, urna eget bibendum efficitur, lacus tellus fermentum odio, eget consequat diam est eget dolor. Donec id sapien vitae mi pulvinar ultrices eu a dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec bibendum nisi. </p>
+				<p>Morbi at leo purus. In hac habitasse platea dictumst. Sed vel ultricies dui, nec sagittis lorem. Sed hendrerit a nunc in commodo. Ut imperdiet pretium metus. Donec viverra ullamcorper gravida. Aenean laoreet urna quam, suscipit tincidunt erat ultrices in. Etiam eget bibendum elit, ut blandit felis. Integer vulputate cursus sapien.</p>
+			<table width: 50%;
+				}
+				.col1 {
+				width: 100px;
+				}
+				border="1" cellpadding="4" cellspacing="0">
+					<tr>
+						<td class = "col1"valign="top"><p>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p></td>
+						<td  class = "col2" valign="top" rowspan ="2" >
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac malesuada neque, ut vestibulum felis. Morbi consequat diam sit amet.</p></td>
+					</tr>
+				<tr>
+					<td height="40">Consectetur, adipisci velit...</td>
+				</tr>
+			</table>
+			</td>
+    	</div>
+ </body>
+</html>
